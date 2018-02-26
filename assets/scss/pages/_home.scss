@@ -1,0 +1,438 @@
+/* Header */
+header {
+	nav {
+		background-color: #fff;
+		min-height: 90px;
+		.navWrap {
+			overflow: hidden;
+			padding: 10.5px 0px;
+		}
+	}
+	@media(min-width: 992px) {
+		nav {
+			.navWrap {
+				.logo {
+					float: left;
+				}
+				.checkList {
+					float: right;
+				}
+			}
+		}
+	}
+}
+
+/* Body */
+#wrapBody {
+	background: url('../../assets/images/bg.png') no-repeat #032c6b;
+	background-position: bottom center;
+	padding: 25px 0 35px;
+	h1, h2, h3, h4, p, label {
+		color: #fff;
+	}
+	.bodyContainer {
+		position: relative;
+		overflow: hidden;
+		.bodyLeft {
+			padding: 35px 0 20px;
+			p {
+				a {
+					font-family: 'Gotham Book';
+					color: #fff;
+					font-size: 18px;
+				}
+			}
+			.bodyLeftWrap {
+				.fields {
+					margin: 5px 0 25px;
+					.inputLabel {
+						margin-bottom: 15px;
+						label {
+							font-size: 18px;
+							font-weight: 500;
+						}
+					}
+					input[type="text"], select {
+						position: relative;
+						display: block;
+						width: 100%;
+						height: 67px;
+						padding: 6px 12px 6px 60px;
+						font-size: 14px;
+						line-height: 1.428571429;
+						color: #555;
+						border: 1px solid #d9dee3;
+						border-radius: 30px;
+						box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+						transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+						font-family: 'Gotham';
+						font-weight: 500;
+						font-size: 14px;
+						color: #898e93;
+						@media (min-width: 768px) {
+							display: inline-block;
+							//width: auto;
+							vertical-align: middle;
+						}
+					}
+					.fieldText1 {
+						background: url('../../assets/images/1.png') no-repeat #e3e8ee;
+						background-position: 15px 17px;
+					}
+					.fieldText2 {
+						background: url('../../assets/images/2.png') no-repeat #e3e8ee;
+						background-position: 15px 17px;
+						option {
+							font-family: 'Gotham';
+							font-weight: 500;
+							font-size: 14px;
+							color: #898e93;
+						}
+					}
+					::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+						font-family: 'Gotham';
+						font-weight: 500;
+						font-size: 14px;
+						color: #898e93;
+					}
+
+					:-ms-input-placeholder { /* Internet Explorer 10-11 */
+						font-family: 'Gotham';
+						font-weight: 500;
+						font-size: 14px;
+						color: #898e93;
+					}
+
+					::-ms-input-placeholder { /* Microsoft Edge */
+						font-family: 'Gotham';
+						font-weight: 500;
+						font-size: 14px;
+						color: #898e93;
+					}
+				}
+				.fields1 {
+					position: relative;
+					.errorMsg {
+						position: absolute;
+						left: 20px;
+						display: none;
+						p {
+							font-family: 'Gotham Book';
+							color: #111;
+							font-size: 12px;
+							margin: 0;
+							padding: 5px 20px;
+							background: #fff;
+							span {
+								color: #1477b4;
+							}
+						}
+					}
+				}
+			}
+		}
+		.bodyRight {
+			.testimonialWrap {
+				.testimonials {
+					overflow: hidden;
+					border-bottom: 1px solid #fff;
+					margin-bottom: 20px;
+					p {
+						line-height: normal;
+					}
+					.lawyer-img {
+						float: left;
+						width: 25%;
+						padding: 0 0 0 10px;
+						img {
+							border-radius: 50%;
+							margin-bottom: 5px;
+							border: 1px solid #2a77ae;
+						}
+						p {
+							font-size: 13px;
+							line-height: normal;
+							font-weight: 500;
+							span {
+								font-size: 11px;
+								font-weight: normal;
+							}
+						}
+					}
+					.lawyer-cont {
+						float: left;
+						width: 75%;
+						padding: 0 10px 0 0;
+						.jobtitle {
+							font-size: 12px;
+							font-family: 'Gotham';
+							font-weight: 500;
+							font-style: normal;
+						}
+						p {
+							font-size: 11px;
+							font-family: 'Gotham Book';
+							font-style: italic;
+							line-height: 20px;
+						}
+						.readview {
+							a {
+								font-family: 'Gotham';
+								font-size: 10px;
+								color: #fbd243;
+								font-style: normal;
+								font-weight: 500;
+								position: relative;
+								padding-right: 17px;
+								&::after {
+									content: '';
+									position: absolute;
+									right: 0;
+									top: 2px;
+									width: 13px;
+									height: 10px;
+									background: url('../../assets/images/book.png') no-repeat;
+									background-position: center;
+								}
+							}
+						}
+					}
+					&:last-child {
+						border-bottom: 0;
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+		@media(min-width: 992px) {
+			.bodyLeft {
+				float: left;
+				width: 60%;
+				.bodyLeftWrap {
+					width: 85%;
+				}
+			}
+			.bodyRight {
+				float: left;
+				width: 40%;
+			}
+		}
+	}
+	@media(max-width: 767px) {
+		.bodyRight {
+			h3 {
+				text-align: center;
+			}
+			.testimonialWrap {
+				.testimonials {
+					.lawyer-img, .lawyer-cont {
+						width: auto !important;
+						float: unset !important;
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Footer */
+footer {
+	padding: 30px 0 50px;
+	background: #fff;
+	.wrapContainer {
+		overflow: hidden;
+		.copyright {
+			ul {
+				margin-bottom: 50px;
+				padding: 0;
+				li {
+					display: inline-block;
+					font-family: 'Gotham Book';
+					font-size: 12px;
+					color: #919aa2;
+					&::after {
+						content: '\f111';
+						font-size: 5px;
+						font-family: 'FontAwesome';
+						margin: 0 10px;
+						vertical-align: middle;
+					}
+					&:last-child {
+						&::after {
+							content: '';
+							margin: 0;
+						}
+					}
+				}
+			}
+			p {
+				font-family: 'Gotham Book';
+				font-size: 12px;
+				color: #919aa2;
+			}
+		}
+		.logos {
+			.logo2, .logo3 {
+				margin-bottom: 10px;
+			}
+		}
+		@media(min-width: 992px) {
+			border-bottom: 1px solid #efefef;
+			padding-bottom: 30px;
+			.col6, .col3 {
+				float: left;
+				position: relative;
+				min-height: 1px
+			}
+			.col6 {
+				width: 50%;
+			}
+			.col3 {
+				width: 25%;
+			}
+			.logos {
+				text-align: right;
+			}
+		}
+		@media (max-width: 991px) {
+			text-align: center;
+			.logo1, .copyright{
+				padding-bottom: 10px;
+				margin-bottom: 20px;
+				border-bottom: 1px solid #efefef;
+			}
+		}
+	}
+}
+
+/* My Category Modal */
+#myCategory {
+	.modal-header {
+		border-bottom: 0;
+	}
+	.modal-body {
+		overflow: hidden;
+		position: relative;
+		p {
+			font-size: 18px;
+			position: relative;
+			text-indent: 40px;
+			margin-bottom: 30px;
+			&::before {
+				content: '';
+				position: absolute;
+				left: 0;
+				width: 30px;
+				height: 30px;
+				background: url('../../assets/images/3.png') no-repeat;
+				background-position: center;
+			}
+		}
+		.checkbox-wrap {
+			.checkbox {
+				margin-bottom: 20px;
+				label {
+					font-family: 'Gotham Book';
+					font-size: 14px;
+				}
+			}
+		}
+		@media(min-width: 992px) {
+			.checkbox-wrap {
+				float: left;
+				width: 50%;
+			}
+		}
+	}
+	.modal-footer {
+		text-align: center !important;
+		border-top: 0;
+		padding-bottom: 40px;
+		.find-lawyer {
+			display: inline-block;
+			border: 0;
+			border-radius: 25px;
+			background: #02377b;
+			color: #fff;
+			font-family: 'Gotham';
+			font-weight: bold;
+			font-size: 16px;
+			text-align: center;
+			width: 255px;
+			padding: 16.5px 0;
+			text-align: center;
+			text-transform: uppercase;
+			&:hover {
+				background: #d68d00;
+			}
+		}
+	}
+}
+
+/* Other Category Modal */
+#otherCategory {
+	.modal-header {
+		border-bottom: 0;
+	}
+	.modal-body {
+		overflow: hidden;
+		position: relative;
+		h4 {
+			font-family: 'Gotham';
+			font-size: 18px;
+			text-transform: uppercase;
+			margin: 0;
+		}
+		p {
+			font-family: 'Gotham Book';
+			font-size: 14px;
+		}
+		.list-wrap {
+			ul {
+				padding: 0;
+				li {
+					line-height: 30px;
+					list-style-type: none;
+					a{
+						font-family: 'Gotham';
+						color: #1864af;
+						font-weight: 300;
+						&:hover {
+							color: #d68d00;
+						}
+					}
+				}
+			}
+		}
+		@media(min-width: 992px) {
+			.list-wrap {
+				float: left;
+				width: 50%;
+			}
+		}
+	}
+	.modal-footer {
+		text-align: center !important;
+		border-top: 0;
+		padding-bottom: 40px;
+		.find-lawyer {
+			display: inline-block;
+			border: 0;
+			border-radius: 25px;
+			background: #02377b;
+			color: #fff;
+			font-family: 'Gotham';
+			font-weight: bold;
+			font-size: 16px;
+			text-align: center;
+			width: 255px;
+			padding: 16.5px 0;
+			text-align: center;
+			text-transform: uppercase;
+			&:hover {
+				background: #d68d00;
+			}
+		}
+	}
+}
